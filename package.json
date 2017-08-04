@@ -1,0 +1,17 @@
+{
+  "name": "file_watcher",
+  "version": "1.0.0",
+  "description": "This is a file system monitor to hot reload when code is saved. (Replacement for (alt + shift) + (ctrl + r)",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dirk Teucher",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3",
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "socket.io": "^2.0.3"
+  }
+}

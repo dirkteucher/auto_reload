@@ -1,0 +1,33 @@
+<html>
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        console.log("Listening for a socket emit from app.js");
+        $(function(){
+            var iosocket = io.connect();
+            iosocket.on('connect', function () {
+                $('#incomingChatMessages').append($('<li>Connected</li>'));
+                iosocket.on('message', function(message) {
+                    location.reload();
+                    console.log("reloading");
+                });
+            });
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+</head>
+<body>
+
+<div class="loadSite">
+</div>
+<script>
+    $(".loadSite").html('<object data="https://www.itccompliance.mydev/itc">');
+    $("object").css("width", "100%");
+    $("object").css("height", "100vh");
+</script>
+
+</body>
+</html>
