@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Dirk Teucher",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "express": "^4.15.3",
     "fs": "0.0.1-security",
